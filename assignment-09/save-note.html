@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<!-- Name: Aryan Gole | Roll No: 2510303135 | Student ID: BCS2025444 | Assignment: 9 -->
+<html lang="en">
+<head><meta charset="UTF-8"><title>Save Note</title></head>
+<body>
+  <h1>My Note</h1>
+  <input type="text" id="note" placeholder="Write a note">
+  <button id="save">Save</button>
+  <script>
+    const box = document.getElementById("note");
+    box.value = localStorage.getItem("note") || "";   // show saved text on page open
+    document.getElementById("save").addEventListener("click", function () {
+      localStorage.setItem("note", box.value);
+    });
+  </script>
+</body>
+</html>

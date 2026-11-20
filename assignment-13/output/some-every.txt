@@ -1,0 +1,2 @@
+Any mark below 40? true
+All marks 35 or more? false
